@@ -1,0 +1,30 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "biotinker:sensor-host",
+  "visibility": "public",
+  "url": "",
+  "description": "Hosts sensor readings on a web server, providing JSON data via HTTP",
+  "models": [
+    {
+      "api": "rdk:component:generic",
+      "model": "biotinker:sensor-host:sensor-host",
+      "short_description": "Web server that hosts sensor readings as JSON files via HTTP",
+      "markdown_link": "README.md#model-biotinkersensor-hostsensor-host"
+    }
+  ],
+  "applications": null,
+  "markdown_link": "README.md",
+  "entrypoint": "run.sh",
+  "first_run": "",
+  "build": {
+    "build": "./build.sh",
+    "setup": "./setup.sh",
+    "path": "dist/archive.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64",
+      "darwin/arm64",
+      "windows/amd64"
+    ]
+  }
+}
