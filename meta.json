@@ -2,7 +2,7 @@
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "biotinker:sensor-host",
   "visibility": "public",
-  "url": "",
+  "url": "https://github.com/biotinker/viam-sensor-host",
   "description": "Hosts sensor readings on a web server, providing JSON data via HTTP",
   "models": [
     {
@@ -14,7 +14,7 @@
   ],
   "applications": null,
   "markdown_link": "README.md",
-  "entrypoint": "run.sh",
+  "entrypoint": "dist/main",
   "first_run": "",
   "build": {
     "build": "./build.sh",
